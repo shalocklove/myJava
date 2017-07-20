@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-Frame-Options" content="deny">
+
+<title>WIPO Gazette of International Marks</title>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/wipo.css">
+<link rel="stylesheet" href="css/gazette.css">
+<link href="css/pager.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<div id="divHeader">
+<ul id="ulTopMenu" class="pull-right">
+<li><a href="http://www.wipo.int/contact/en/area.jsp?area=marks">Contact Us</a>
+<li><a href="http://www.wipo.int/myaccount/en/">My Account</a>
+<!--<li><a href="http://www.wipo.int/madrid/en/madridgazette/faq.html">FAQ</a>-->
+<li><a href="#" id="langSelection">English <b class="caret"></b></a>
+</ul>
+<ul id="ulLangSelection"><li><a href="?lang=es">Español</a><li><a href="?lang=fr">Français</a></ul>
+<div id="divTopLogo"></div>
+<div id="divMadridLogo"></div>
+<ul id="ulBreadCrumbs">
+<li class="shade_0"><a href="http://www.wipo.int/portal/en/">Home</a>
+<li class="shade_1"><a href="http://www.wipo.int/services/en/">IP Services</a>
+<li class="shade_2"><a href="http://www.wipo.int/madrid/en/">Madrid System</a>
+<li class="shade_3"><a href="http://www.wipo.int/madrid/en/madridgazette/index.html">WIPO Gazette of International Marks</a>
+</ul>
+</div>
+
+<div id="divGazette">
+
+<h1>WIPO Gazette of International Marks</h1>
+
+<p class="lead">The WIPO Gazette of International Marks is the official publication of the Madrid System. Every week the International Bureau publishes data regarding new international registrations, renewals, subsequent designations and modifications affecting existing international registrations.</p>
+
+<ul class="tabRow">
+	<li id="tabBrowse" class="selected"><a href="#" id="btnBrowse">Browse by chapter</a></li>
+	<li id="tabSearch" ><a href="#" id="btnSearch">Search by Registration Number or Mark or Holder</a></li>
+	<!-- 
+	 -->
+	<li id="tabFaq"><a href="http://www.wipo.int/madrid/en/madridgazette/faq.html" id="btnFaq" target="_blank">Frequently Asked Questions (FAQs)</a></li>
+</ul>
+
+<div id="divQuery">
+
+<form method="post" name="query" id="formQuery">
+
+<input type="hidden" name="action" value="query">
+<input type="hidden" name="lang" value="en">
+<input type="hidden" name="page" value="null">
+
+<div class="fieldSet">
+<span class="legend">Publication date</span>
+<label for="selYear">Year</label>
+<select id="selYear" name="year"><option selected value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option></select>
+<label for="selIssue">No.</label>
+<select id="selIssue" name="issue"><option selected value="26">26 - 13/07/2017</option><option value="25">25 - 06/07/2017</option><option value="24">24 - 29/06/2017</option><option value="23">23 - 22/06/2017</option><option value="22">22 - 15/06/2017</option><option value="21">21 - 08/06/2017</option><option value="20">20 - 01/06/2017</option><option value="19">19 - 25/05/2017</option><option value="18">18 - 18/05/2017</option><option value="17">17 - 11/05/2017</option><option value="16">16 - 04/05/2017</option><option value="15">15 - 27/04/2017</option><option value="14">14 - 20/04/2017</option><option value="13">13 - 13/04/2017</option><option value="12">12 - 06/04/2017</option><option value="11">11 - 30/03/2017</option><option value="10">10 - 23/03/2017</option><option value="9">09 - 16/03/2017</option><option value="8">08 - 09/03/2017</option><option value="7">07 - 02/03/2017</option><option value="6">06 - 23/02/2017</option><option value="5">05 - 16/02/2017</option><option value="4">04 - 09/02/2017</option><option value="3">03 - 02/02/2017</option><option value="2">02 - 26/01/2017</option><option value="1">01 - 19/01/2017</option></select>
+</div>
+
+<div class="fieldSet" id="fsChapter">
+<span class="legend">Summary</span>
+<select id="selChapter" name="chapter"><option  selected value="">Remarks</option><option value="1">Registrations</option><option value="2">International Registrations which have not been the subject of a renewal</option><option value="3">Second installment in respect of some designated Contracting Parties (Rule 40(3))</option><option value="4">Renewals</option><option value="5">Complementary Renewals</option><option value="6">Subsequent designations</option><option value="7">Subsequent designations resulting from Conversion</option><option value="8">Continuation of effect</option><option value="9">Total changes of holder</option><option value="10">Partial changes of holder</option><option value="11">Mergers of international registrations</option><option value="12">Cancellations under Rule 25</option><option value="13">Cancellations under Rule 22</option><option value="14">Cancellations under Rule 34.(3)</option><option value="15">Renunciations</option><option value="16">Limitations</option><option value="17">Change in the name or address of the holder</option><option value="18">Possible opposition beyond the 18-month time limit (Rule 16)</option><option value="19">Notifications of provisional refusals</option><option value="20">Final decisions</option><option value="21">Statements under Rule 17(5)(a)</option><option value="22">Further statements under Rule 17(5)(b)</option><option value="23">Confirmations of total provisional refusal (Rule 18ter(3))</option><option value="24">Statements of grant of protection following a provisional refusal (Rule 18ter(2))</option><option value="25">Further decisions under Rule 18ter(4)</option><option value="26">Statements of grant of protection (Rule 18ter(1))</option><option value="27">Ex Officio examination completed (Rule 18bis(1))</option><option value="28">Statements under Rule 18ter(2)</option><option value="29">Statements of grant of protection</option><option value="30">Invalidations</option><option value="31">Miscellaneous recordals</option><option value="32">Corrections</option></select>
+</div>
+
+<div class="fieldSet hidden" id="fsCountry">
+<span class="legend">State/IGO</span>
+<select id="selCountry" name="country"><option  selected value="">All</option><option value="OA">African Intellectual Property Organization (OAPI) (OA)</option><option value="AL">Albania (AL)</option><option value="DZ">Algeria (DZ)</option><option value="AG">Antigua and Barbuda (AG)</option><option value="AM">Armenia (AM)</option><option value="AU">Australia (AU)</option><option value="AT">Austria (AT)</option><option value="AZ">Azerbaijan (AZ)</option><option value="BH">Bahrain (BH)</option><option value="BY">Belarus (BY)</option><option value="BX">Benelux (BX)</option><option value="BT">Bhutan (BT)</option><option value="BQ">Bonaire, Sint Eustatius and Saba (BQ)</option><option value="BA">Bosnia and Herzegovina (BA)</option><option value="BW">Botswana (BW)</option><option value="BN">Brunei Darussalam (BN)</option><option value="BG">Bulgaria (BG)</option><option value="KH">Cambodia (KH)</option><option value="CN">China (CN)</option><option value="CO">Colombia (CO)</option><option value="HR">Croatia (HR)</option><option value="CU">Cuba (CU)</option><option value="CW">Curaçao (CW)</option><option value="CY">Cyprus (CY)</option><option value="CZ">Czech Republic (CZ)</option><option value="KP">Democratic People's Republic of Korea (KP)</option><option value="DK">Denmark (DK)</option><option value="EG">Egypt (EG)</option><option value="EE">Estonia (EE)</option><option value="EM">European Union (EM)</option><option value="FI">Finland (FI)</option><option value="FR">France (FR)</option><option value="GM">Gambia (GM)</option><option value="GE">Georgia (GE)</option><option value="DE">Germany (DE)</option><option value="GH">Ghana (GH)</option><option value="GR">Greece (GR)</option><option value="HU">Hungary (HU)</option><option value="IS">Iceland (IS)</option><option value="IN">India (IN)</option><option value="IE">Ireland (IE)</option><option value="IR">Islamic Republic of Iran (IR)</option><option value="IL">Israel (IL)</option><option value="IT">Italy (IT)</option><option value="JP">Japan (JP)</option><option value="KZ">Kazakhstan (KZ)</option><option value="KE">Kenya (KE)</option><option value="KG">Kyrgyzstan (KG)</option><option value="LA">Lao People's Democratic Republic (LA)</option><option value="LV">Latvia (LV)</option><option value="LS">Lesotho (LS)</option><option value="LR">Liberia (LR)</option><option value="LI">Liechtenstein (LI)</option><option value="LT">Lithuania (LT)</option><option value="MG">Madagascar (MG)</option><option value="MX">Mexico (MX)</option><option value="MC">Monaco (MC)</option><option value="MN">Mongolia (MN)</option><option value="ME">Montenegro (ME)</option><option value="MA">Morocco (MA)</option><option value="MZ">Mozambique (MZ)</option><option value="NA">Namibia (NA)</option><option value="AN">Netherlands Antilles (AN)</option><option value="NZ">New Zealand (NZ)</option><option value="NO">Norway (NO)</option><option value="OM">Oman (OM)</option><option value="PH">Philippines (PH)</option><option value="PL">Poland (PL)</option><option value="PT">Portugal (PT)</option><option value="KR">Republic of Korea (KR)</option><option value="MD">Republic of Moldova (MD)</option><option value="RO">Romania (RO)</option><option value="RU">Russian Federation (RU)</option><option value="RW">Rwanda (RW)</option><option value="SM">San Marino (SM)</option><option value="ST">Sao Tome and Principe (ST)</option><option value="RS">Serbia (RS)</option><option value="SL">Sierra Leone (SL)</option><option value="SG">Singapore (SG)</option><option value="SX">Sint Maarten (Dutch part) (SX)</option><option value="SK">Slovakia (SK)</option><option value="SI">Slovenia (SI)</option><option value="ES">Spain (ES)</option><option value="SD">Sudan (SD)</option><option value="SZ">Swaziland (SZ)</option><option value="SE">Sweden (SE)</option><option value="CH">Switzerland (CH)</option><option value="SY">Syrian Arab Republic (SY)</option><option value="TJ">Tajikistan (TJ)</option><option value="MK">The former Yugoslav Republic of Macedonia (MK)</option><option value="TN">Tunisia (TN)</option><option value="TR">Turkey (TR)</option><option value="TM">Turkmenistan (TM)</option><option value="UA">Ukraine (UA)</option><option value="GB">United Kingdom (GB)</option><option value="US">United States of America (US)</option><option value="UZ">Uzbekistan (UZ)</option><option value="VN">Viet Nam (VN)</option><option value="ZM">Zambia (ZM)</option><option value="ZW">Zimbabwe (ZW)</option></select>
+<label for="optOrigin">Origin</label>
+<input type="checkbox" name="origin" id="optOrigin" disabled checked>
+<label for="optInterested">Interested</label>
+<input type="checkbox" name="interested" id="optInterested" disabled checked>
+<label for="optDesignated">Designated</label>
+<input type="checkbox" name="designated" id="optDesignated" disabled checked>
+<!-- 
+<label for="optAffected">Affected</label>
+<input type="checkbox" name="affected" id="optAffected" disabled checked>
+ -->
+</div>
+
+<div class="fieldSet hidden" id="fsSearch">
+<span class="legend">Search</span>
+<label for="txtIrn">IRN</label>
+<input type="text" name="irn" value="" id="txtIrn">
+<label for="txtHolder">Holder</label>
+<input type="text" name="holder" value="" id="txtHolder">
+<label for="txtBrand">Mark</label>
+<input type="text" name="brand" value="" id="txtBrand">
+</div>
+
+<div class="fieldSet">
+<span class="legend"></span>
+<input class="formButton" id="btnQuery" type="button" value="Submit">
+<input class="resetButton" id="btnReset" type="button" value="Reset">
+</div>
+
+</form>
+
+<a id="hitList"></a>
+
+<div id="divChapterHeader"></div>
+<div id="divNoResults">No match</div>
+
+<div class="pager">
+<ul class="pagerNav">
+<li class="nav first">
+<li class="nav prev">
+<li><input class="currentPage">
+<li><span class="totalPages"></span>
+<li class="nav next">
+<li class="nav last">
+</ul>
+<ul class="pagerData">
+<li class="pagerInfo">
+<li><a class="xls" href="xls/export.xls"><span class="xlsIcon">&nbsp;</span>Export hit list to Excel format</a>
+</ul>
+</div>
+
+<table id="tabHits" class="hidden">
+<tr>
+<th class="headBrand">Mark</th>
+<th class="headIrn">IRN</th>
+<th class="headHolder">Holder</th>
+<th class="headOrg">Origin</th>
+<th class="headTran">Transaction</th>
+<th class="headIssue">Gazette</th>
+</tr>
+</table>
+
+<div class="pager">
+<ul class="pagerNav">
+<li class="nav top">
+<li class="nav empty">
+<li class="nav first">
+<li class="nav prev">
+<li><input class="currentPage">
+<li><span class="totalPages"></span>
+<li class="nav next">
+<li class="nav last">
+</ul>
+<ul class="pagerData">
+<li class="pagerInfo">
+</ul>
+</div>
+
+<div id="divRemarks" class="hidden featured">
+<h2>Remarks, declarations, general information, individual fees and forms</h2>
+<ul>
+
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/gaz_remarks.htm">Remarks concerning the publication</a> of registrations and of other recordals</li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/members/declarations.html">Declarations</a> made under the Madrid Agreement and the Madrid Protocol</li>
+<li><a target="_blank" href="http://www.wipo.int/export/sites/www/treaties/en/documents/pdf/madrid_marks.pdf">List of Contracting Parties</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/gaz_st60.htm">WIPO Standards ST.60 and ST.3</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/fees/ind_taxes.html">Individual Fees</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/forms/">Official and Optional forms</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/notices/">Information Notices</a></li>
+<!-- 
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/[YEAR]/[NO]/gaz_remarks.htm">Remarks concerning the publication</a> of registrations and of other recordals</li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/[YEAR]/[NO]/gaz_declarations.htm">Declarations</a> made under the Madrid Agreement and the Madrid Protocol</li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/[YEAR]/[NO]/gaz_st3.htm">List of Contracting Parties</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/[YEAR]/[NO]/gaz_st60.htm">WIPO Standards ST.60 and ST.3</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/[YEAR]/[NO]/gaz_taxes.htm">Individual Fees</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/madridgazette/remarks/[YEAR]/[NO]/gaz_forms.htm">Official and Optional forms</a></li>
+<li><a target="_blank" href="http://www.wipo.int/madrid/en/notices/">Information Notices</a></li>
+ -->
+</ul>
+</div>
+
+</div>
+ 
+<script>
+var lang = "en";
+var context = "browse";
+var pageSize = 10;
+var cacheSize = 10;
+</script>
+
+</div>
+
+
+
+<script id="tmplIssues" type="text/x-jquery-tmpl">
+<option value="${week}">${week < 10 ? '0' + week : week } - ${pub}</option>
+</script>
+
+<script id="tmplCountries" type="text/x-jquery-tmpl">
+<option value="${code}">${name} (${code})</option>
+</script>
+
+<script id="tmplChapters" type="text/x-jquery-tmpl">
+<option value="${seq}">${name}</option>
+</script>
+
+<script id="tmplDetails" type="text/x-jquery-tmpl">
+  <td class="colIrn"><a href="details.jsp?lang=${lang}&id=${id}" target="_blank">{{html irn.replace(/ \~ /g,"<br>")}}</a></td>
+</script>
+
+
+<script id="tmplTran" type="text/x-jquery-tmpl">
+<tr>
+  <td class="colImg">{%if image%}<img src="http://www.wipo.int/madridwebgazette/images/${image}"{%if brand%} title="${brand}" alt="${brand}"{%/if%}>{%else%}{%if brand%}{%if brand.indexOf('~') != -1%}{%html brand.replace(/ \~.*$/,' ...')%}<br><span class='brandsList'>{%html brand.replace(/ \~ /g,"; ")%}</span>{%else%}${brand}{%/if%}{%/if%}{%/if%}</td>
+  <td class="colIrn"><a class="hitItem" onClick="displayDetails(${seq});">{%html irn.replace(/ \~.*$/," ...")%}</a></td>
+  <td class="colHolder">{%if holder%}${holder}{%/if%}</td>
+  <td class="colOrg">{%if oocd%}{%html oocd.replace(/ \~.*$/," ...")%}{%/if%}</td>
+  <td class="colTran"><span>${codes[type].short}</span></td>
+</tr>
+</script>
+
+<script id="tmplTranHoriz" type="text/x-jquery-tmpl">
+<tr><td class="img"></td><td class="img">{%if image%}<img class="gazimg" src="http://www.wipo.int/madridwebgazette/images/${image}"{%if brand%} title="${brand}" alt="${brand}"{%/if%}>{%else%}{%if brand%}{%if brand.indexOf('~') != -1%}{%html brand.replace(/ \~.*$/,' ...')%}<br><span class='brandsList'>{%html brand.replace(/ \~ /g,"; ")%}</span>{%else%}${brand}{%/if%}{%/if%}{%/if%}</td></tr>
+<tr><td class="hdr">Transaction</td><td class="dta">${codes[type].long}</td></tr>
+<tr><td class="hdr">Gazette</td><td class="dta">${year}.${issue}</td></tr>
+<tr><td class="hdr">IRN</td><td class="dta">{%html irn.replace(/ \~ /g,"; ")%}</td></tr>
+{%if holder%}<tr><td class="hdr">Holder</td><td class="dta">${holder}</td></tr>{%/if%}
+{%if oocd%}<tr><td class="hdr">Origin</td><td class="dta">{%html oocd.replace(/ \~.*$/," ...")%}</td></tr>{%/if%}
+<td class="colOrg">{%if oocd%}${countriesCodes[oocd.replace(/ \~.*$/,"")]} ({%html oocd.replace(/ \~.*$/," ...")%}){%/if%}</td>
+</script>
+
+<script id="tmplTranOld" type="text/x-jquery-tmpl">
+<tr>
+  {%if image%}<td class="colImg"><a href="details.jsp?seq=${seq}" onClick="detailsPopup(${seq}); return false;"><img src="http://www.wipo.int/madridwebgazette/images/${image}"{%if brand%} title="${brand}" alt="${brand}"{%/if%}></a>{%else%}<td class="colBrand">{%if brand%}{%if brand.indexOf('~') != -1%}{%html brand.replace(/ \~.*$/,' ...')%}<br><span class='brandsList'>{%html brand.replace(/ \~ /g,"; ")%}</span>{%else%}${brand}{%/if%}{%/if%}{%/if%}</td>  
+  <td class="colIrn"><a href="details.jsp?seq=${seq}" onClick="detailsPopup(${seq}); return false;">{%html irn.replace(/ \~.*$/," ...").replace(/^0/,"")%}</a></td>
+  <td class="colHolder">{%if holder%}${holder}{%/if%}</td>
+  <td class="colOrg">{%if oocd%}{%html oocd.replace(/ \~.*$/," ...")%}{%/if%}</td>
+  <td class="colTran"><span>${codes[type].short}</span></td>
+  <td class="colIssue">${year} / ${issue}</td>
+</tr>
+</script>
+
+<script id="tmplTranNew" type="text/x-jquery-tmpl">
+<tr>
+  {%if image%}<td class="colImg"><a href="details.jsp?seq=${seq}" onClick="detailsPopup(${seq}); return false;"><img src="http://www.wipo.int/madridwebgazette/images/${image}"{%if brand%} title="${brand}" alt="${brand}"{%/if%}></a>{%else%}<td class="colBrand">{%if brand%}{%if brand.indexOf('~') != -1%}{%html brand.replace(/ \~.*$/,' ...')%}{%else%}${brand}{%/if%}{%/if%}{%/if%}</td>  
+  <td class="colIrn"><a href="details.jsp?seq=${seq}" onClick="detailsPopup(${seq}); return false;">{%html irn.replace(/ \~.*$/," ...").replace(/^0/,"")%}</a></td>
+  <td class="colHolder">{%if holder%}${holder}{%/if%}</td>
+  <td class="colOrg">{%if oocd%}{%html oocd.replace(/ \~.*$/," ...")%}{%/if%}</td>
+  <td class="colTran"><span>${codes[type].short}</span></td>
+  <td class="colIssue">${year} / ${issue}</td>
+</tr>
+</script>
+
+
+<div id="divScrollSpacer"></div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.tmpl.js"></script>
+<script src="js/gazette.min.js"></script>
+
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-138270-1']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+
+</body>
+</html>
+{"id":11285818,
+"year":2017,
+"issue":26,                                 gazette
+"type":"ENN",
+"irn":"1354805",                            irn
+"oocd":"DE",                                origin
+"dcpcd":"AT ~ BX ~ CH ~ IT ~ LI",
+"image":"2017/2017-26/bw/1354805-th.gif",   mark
+"brand":"RTL NEXT",
+"holder":"RTL Group Deutschland",           holder
+"docid":998685101},
