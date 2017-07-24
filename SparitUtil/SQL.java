@@ -42,6 +42,9 @@ public class SQL {
 		}finally{
 			System.out.println("添加出错");
 		}
+		this.rs = rs;
+		this.sta = sta;
+		this.con = conn;
 		return rs;
 	}
 	
@@ -51,7 +54,10 @@ public class SQL {
 			sta = conn.createStatement();
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();System.out.print("添加出错1");
+			e1.printStackTrace();
+		}finally{
+			System.out.println("添加出错1");
+			
 		}
 		try {
 			i = sta.executeUpdate(sql);
@@ -59,8 +65,10 @@ public class SQL {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
-			System.out.print("添加出错2");
+			System.out.println("添加出错2");
 		}
+		this.sta = sta;
+		this.con = conn;
 		return i;
 	}
 	public void closeSelect() throws SQLException{
