@@ -2,11 +2,13 @@ package ThreadSparit;
 
 import java.io.IOException;
 import java.net.URLConnection;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.mysql.jdbc.Connection;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -15,7 +17,7 @@ import util.Sparit;
 
 public class Demo1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
 		Sparit sparit = new Sparit();
 		String parameter = "action=query&lang=en&page=null&year=2017&issue=27&chapter=1&country=&irn=&holder=&brand=&type=ENN&start=0&rows=4&context=browse";
@@ -44,10 +46,16 @@ public class Demo1 {
 			e.printStackTrace();
 		}
 		SQL sql = new SQL();
-		String str = "insert into demo1 (Mark, IRN, Origin, Holder, Transacition, Gazette)values('?','?','?','?','?','?')" ;
-		String s = MessageFormat.format(str, "sad", " ", " "," "," "," ");
-		Connection con = (Connection) sql.connection("jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8","root","sherlock");
-		sql.change(s, con);
+		Statement sta = sql.addJDBC("jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8", "root", "sherlock");
+		String str = "insert into demo1 (Mark, IRN, Origin, Holder, Transacition, Gazette)values({0},{1},{2},{3},{4},{5})" ;
+		String s = MessageFormat.format(str, "'sad'", "'d'", "'d' ","'d' ","'d' ","'d' ");
+		System.out.println(s);
+//		ResultSet rs = sql.select("select * from demo1", conn);
+//		while(rs.next()){
+//			System.out.println(rs.getString("IRN"));
+//		}
+//		sql.closeSelect(conn, rs);
+		sql.change(s, sta);
 		sql.closeChange();
 	}
 	

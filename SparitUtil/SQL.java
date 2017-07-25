@@ -9,11 +9,10 @@ public class SQL {
 	private Connection con = null;//建立连接
 	private Statement sta = null;//数据库操作
 	private ResultSet rs = null;//查找操作
-	private PreparedStatement psta = null;
-	public Connection connection(String Url, String User, String Password){
+	public Statement addJDBC(String url, String user, String password){
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(Url, User, Password);
+			con = DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -23,52 +22,31 @@ public class SQL {
 			e.printStackTrace();
 			System.out.println("第二步连接出错");
 		}
-		return con;
-	}
-	public ResultSet select(String sql, Connection conn){
 		try {
-			sta = conn.createStatement();
-		} catch (SQLException e) {
+			sta = con.createStatement();
+		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			System.out.println("查询失败");
+			e1.printStackTrace();System.out.print("添加出错1");
 		}
+		return sta;
+	}
+	public ResultSet select(String sql, Statement sta){
 		try {
 			rs = sta.executeQuery(sql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			System.out.println("添加出错");
-		}
-		this.rs = rs;
-		this.sta = sta;
-		this.con = conn;
+			e.printStackTrace();System.out.println("添加出错");
+		}finally{}
 		return rs;
 	}
-	
-	public int change(String sql, Connection conn){
+	public int change(String sql, Statement sta){
 		int i = 0;
-		try {
-			sta = conn.createStatement();
-		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}finally{
-			System.out.println("添加出错1");
-			
-		}
 		try {
 			i = sta.executeUpdate(sql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			System.out.println("添加出错2");
+			e.printStackTrace();System.out.print("添加出错2");
 		}
-		this.sta = sta;
-		this.con = conn;
 		return i;
 	}
 	public void closeSelect() throws SQLException{
@@ -76,22 +54,9 @@ public class SQL {
 		sta.close();
 		con.close();
 	}
-	public void closeChange() {
-		try {
+	public void closeChange() throws SQLException {
 			sta.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			System.out.println("sta关闭错误");
-		}
-		try {
 			con.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			System.out.println("con关闭错误");
-		}
 	}
 }
+//Migic. Don`t touch
